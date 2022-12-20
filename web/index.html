@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Register course</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="d-flex container align-items-center justify-content-center">
+                <img src="image/logo.jpg" alt="logo" width="450px" height="200px">
+            </div>
+        </div>
+        <div class="container mt-3">
+            <h5 class="p-3" style="font-weight: bold; font-style: italic; text-align: center">Đăng ký khóa học</h5>
+            <form class="form-horizontal align-items-center" action="/action_page.php" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="khoaHoc">Khóa học:</label>
+                            <div class="col-md-9">
+                                <select class="form-control" id="khoaHoc" name="khoaHoc">
+                                    <option value="AF">Afghanistan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="nienKhoa">Niên khóa:</label>
+                            <div class="col-md-9">
+                                <select class="form-control" id="nienKhoa" name="nienKhoa">
+                                    <option value="AF">Afghanistan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="lopHoc">Lớp học:</label>
+                            <div class="col-md-9">
+                                <select class="form-control" id="lopHoc" name="lopHoc">
+                                    <option value="AF">Afghanistan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="text-align: center">Nhập thông tin học viên</h5>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="maHV">Mã HV:</label>
+                            <div class="controls col-md-9">
+                                <input type="text" class="form-control" id="maHV" name="maHV" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="name">Name:</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="birthday">Ngày sinh:</label>
+                            <div class="col-md-9">
+                                <input type="date" class="form-control" id="birthday" name="birthday">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="birthday">Giới tính:</label>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Nam
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Nữ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="phone">Số điện thoại:</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3" for="address">Địa chỉ:</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" rows="5" id="address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="text-align: center">
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
